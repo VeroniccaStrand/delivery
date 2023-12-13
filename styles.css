@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.nav-container {
+  font-family:sans-serif;
+  
+  display: flex;
+  justify-content: space-between;
+}
+.logo-wrap {
+  margin-left: 1rem;
+}
+.logo {
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.sub-logo {
+  font-weight: 100;
+  font-size: .8rem;
+}
+.btn-wrap {
+  padding: .8rem 1rem;
+}
+.mail-btn{
+  border: none;
+  padding: .5rem 2rem;
+}
+.log-in{
+  padding: 1rem;
+}
+
+list-wrap,ul{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2rem;
+  list-style: none;
+  gap: 2rem;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+  

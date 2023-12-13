@@ -19,20 +19,22 @@ function renderPosts(posts) {
 
     let title = document.createElement("h2");
     let content = document.createElement("p");
-    let react = document.createElement("span");
+    let tagContainer = document.createElement("div");
     let reactContainer = document.createElement("div");
     let tagReact = document.createElement("div");
-    let wrap = document.createElement("div");
-    let tagContainer = document.createElement("div");
     let likeBtn = document.createElement("img");
+    let react = document.createElement("span");
+    let wrap = document.createElement("div");
+    
+    let cont = document.querySelector(".api-container");
 
-    tagContainer.classList.add("tagContainer");
     title.classList.add("title");
     content.classList.add("content");
-    react.classList.add("react");
-    likeBtn.classList.add("like-btn");
+    tagContainer.classList.add("tagContainer");
     reactContainer.classList.add("react-container");
     tagReact.classList.add("tag-react");
+    likeBtn.classList.add("like-btn");
+    react.classList.add("react");
     wrap.classList.add("wrap");
 
     likeBtn.src = "/images/heart.png";
@@ -43,7 +45,6 @@ function renderPosts(posts) {
     reactContainer.append(react, likeBtn);
     tagReact.append(reactContainer);
     wrap.append(title, content, tagReact);
-    let cont = document.querySelector(".api-container");
     cont.appendChild(wrap);
 
     likeBtn.addEventListener("click", () => {
@@ -67,14 +68,16 @@ function renderPosts(posts) {
   }
 }
 
-//Skapa nya inlägg
+//Create new posts 
 
 let postForm = document.getElementById("createModal");
 let container = document.querySelector(".post-container");
-let titleInput = postForm["title"];
 let contentInput = postForm["content"];
-let tagsInput = postForm["tag1"];
+let titleInput = postForm["title"];
 let tagsInput2 = postForm["tag2"];
+let tagsInput = postForm["tag1"];
+
+
 let addPost = (title, body, tags) => {
   let post = {
     title,
