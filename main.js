@@ -30,7 +30,7 @@ function renderPosts(posts) {
 
     title.classList.add("title");
     content.classList.add("content");
-    tagContainer.classList.add("tagContainer");
+    tagContainer.classList.add("tag-container");
     reactContainer.classList.add("react-container");
     tagReact.classList.add("tag-react");
     likeBtn.classList.add("like-btn");
