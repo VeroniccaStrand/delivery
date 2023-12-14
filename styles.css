@@ -11,7 +11,6 @@
   --clr-white-shade:#b5b2b2;
 }
 .big-container {
-  
   background-image: url(images/Image.jpeg);
   background-size: cover;
   background-position: center;
@@ -107,10 +106,9 @@ ul {
   font-weight: 400;
   margin-bottom: 1rem;
 }
-.create-btn{
-  padding: 0.5rem 3rem; 
+.create-btn {
+  padding: 0.5rem 3rem;
   border: none;
-  
 }
 .wrapper span {
   font-weight: 100;
@@ -122,7 +120,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, 30rem);
   margin-top: 5rem;
-  gap: 10px;
+  gap: 3rem;
   justify-content: center;
 }
 .btn {
