@@ -129,19 +129,9 @@ postForm.onsubmit = (e) => {
   createPostElement(newPost);
 };
 
-// Öppna/ stänga modal
-let createPostBtn = document.querySelector(".create-option");
-let modal = document.querySelector(".modal-wrap");
-let createForm = document.getElementById("createModal");
+let formToggle = document.querySelector(".create-btn");
 
-let submitBtn = document.getElementById("postBtn");
-let closeModal = document.querySelector(".close");
-
-function openModal() {
-  modal.classList.remove("hidden");
-}
-createPostBtn.addEventListener("click", openModal);
-function close() {
-  modal.classList.add("hidden");
-}
-closeModal.addEventListener("click", close);
+formToggle.addEventListener("click", _ => {
+  document.body.classList.toggle("form-is-open");
+  
+})
