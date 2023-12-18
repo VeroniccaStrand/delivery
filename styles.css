@@ -198,7 +198,7 @@ a:focus {
   justify-content: center;
   position: relative;
   
-  background-color: #222;
+  background-color: #0f1014;
   color: #fff;
   padding: 1rem;
   
@@ -227,11 +227,7 @@ a:focus {
   letter-spacing: -1px;
   margin-bottom: 2rem;
 }
-.close {
-  position: absolute;
-  top: .5rem;
-  right: 2.5rem;
-}
+
 .create-title {
   width: 100%;
   padding: .5rem .2rem;
